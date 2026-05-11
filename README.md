@@ -1,6 +1,15 @@
 # api-json-to-dataframe_Project
 
-This repository contains Jupyter notebook assignments and their corresponding CSV datasets.
+This project demonstrates a complete **API to DataFrame to CSV** workflow using Python and Jupyter notebooks.
+
+The main goal is to:
+
+- Fetch data from public API endpoints.
+- Convert the JSON response into structured pandas `DataFrame` objects.
+- Clean and inspect the data.
+- Export the final structured output to CSV files for reporting and further analysis.
+
+In short, each notebook shows how raw API data is transformed into analysis-ready tabular datasets.
 
 ## Project files (ordered: notebook followed by CSV)
 
@@ -19,7 +28,16 @@ This repository contains Jupyter notebook assignments and their corresponding CS
 9. `09_Staff_assignment.ipynb`
 10. `10_employees-3.csv`
 
-## Notes
+## Workflow used in this project
 
-- All notebooks are designed to load, inspect, and transform API or tabular CSV data into dataframes.
-- The datasets are included directly in the repository for reproducibility.
+1. Send request to API endpoint.
+2. Parse JSON response.
+3. Normalize data into a pandas `DataFrame`.
+4. Perform basic checks (shape, columns, preview, nulls).
+5. Save output with `DataFrame.to_csv()`.
+
+## Why this project matters
+
+- Shows practical API data extraction and transformation skills.
+- Creates reusable CSV datasets from dynamic API sources.
+- Provides transparent notebook-based steps for reproducibility and learning.
